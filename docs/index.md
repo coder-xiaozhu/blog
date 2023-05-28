@@ -9,10 +9,10 @@ hero:
     src: /hero.svg
     alt: L-Pig
   # tagline: My Blog
-  actions:
-    - theme: brand
-      text: 开始阅读
-      link: /Java/
+  # actions:
+  #   - theme: brand
+  #     text: 开始阅读
+  #     link: /Java/
 
 features:
   - title: Java
@@ -26,6 +26,12 @@ features:
     link: /Go/
     icon:
       src: /golang.svg
+    linkText: 点击查看
+  - title: Redis
+    icon:
+      src: /redis.svg
+    details: Redis相关博客
+    link: /Redis/
     linkText: 点击查看
   - title: 友情链接
     link: https://blog.ltools.vip/
