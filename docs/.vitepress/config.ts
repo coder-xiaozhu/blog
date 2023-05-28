@@ -6,6 +6,7 @@ export default defineConfig({
   description: "小朱的博客",
   lastUpdated: true,
   useWebFonts: false,
+  outDir: 'build/.vuepress/dist',
   locales: {
     root: { label: '简体中文', lang: 'zh-CN' },
   },
@@ -17,6 +18,7 @@ export default defineConfig({
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   ],
   themeConfig: {
+    
     logo: '/hero.svg',
     lastUpdatedText: '最后一次更新',
 
