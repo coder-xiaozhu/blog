@@ -43,6 +43,7 @@ func (day WeekDay) String() string {
 }
 ```
 
+
 这样我们就可以通过`day.String()`来获取枚举项的字符串值了
 
 ### 代码示例
