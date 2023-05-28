@@ -11,7 +11,6 @@ export default defineConfig({
   },
   markdown: {
     lineNumbers: true,
-    // defaultHighlightLang: 
   },
   head: [
     ['link', { rel: 'shortcut icon', href: '/favicon.ico' }],
@@ -45,7 +44,7 @@ export default defineConfig({
   }
 })
 
-function getSidebar(){
+function getSidebar() {
   return {
     "/Java/": javaSidebar(),
     "/Go/": goSidebar(),
@@ -58,8 +57,8 @@ function javaSidebar() {
     {
       text: 'Java',
       items: [
-        { text: 'SpringBoot打包后不能读取classpath下文件', link: '/Java/springboot-package'},
-        { text: 'SpringBoot-Jar包瘦身',link: '/Java/thin-jar'}
+        { text: 'SpringBoot打包后不能读取classpath下文件', link: '/Java/springboot-package' },
+        { text: 'SpringBoot-Jar包瘦身', link: '/Java/thin-jar' }
       ]
     }
   ]
@@ -70,18 +69,18 @@ function goSidebar() {
     {
       text: 'Go',
       items: [
-        { text: 'First', link: '/Go/first' },
+        { text: 'Go实现枚举', link: '/Go/enum' },
       ]
     }
   ]
 }
 
-function redisSidebar(){
+function redisSidebar() {
   return [
     {
       text: 'Redis',
       items: [
-        {text:'缓存穿透、缓存击穿、缓存雪崩',link: '/Redis/cache'}
+        { text: '缓存穿透、缓存击穿、缓存雪崩', link: '/Redis/cache' }
       ]
     }
   ]
