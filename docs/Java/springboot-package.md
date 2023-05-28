@@ -3,7 +3,7 @@
 在做读取 SpringBoot 项目读取文件的时候(文件在 `resource/`目录下)，在本地IDEA无论使用 `Resource`类还是使用 `Classpathresource`类获取文件均无问题,但是在打成jar发布后 使用 `Resource` 类无法获取到文件,而使用 `Classpathresource`则无问题。
 下面是报错信息
 
-```plaintext
+```text
 java.io.FileNotFoundException: G:\Coding\Java\demo\target\file:\G:\Coding\Java\demo\target\demo-0.0.1-SNAPSHOT.jar!\BOOT-INF\classes!\text.json (文件名、目录名或卷标语法不正确。)
 ```
 
