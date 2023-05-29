@@ -1,10 +1,10 @@
 
 #### 前言
-><font color=LightCoral>众所周知,SpringBoot打Jar包的时候会把所有依赖的Jar包都打包在BOOT-INF/lib目录下,随着业务越来越复杂,引用的Jar包也就越来越多,导致每次更新版本的时候上传的Jar包越来越大,耗费的时间越来越久,所以本文找了一种解决办法 </font>
+><font color=LightCoral>&emsp;&emsp;众所周知,SpringBoot打Jar包的时候会把所有依赖的Jar包都打包在BOOT-INF/lib目录下,随着业务越来越复杂,引用的Jar包也就越来越多,导致每次更新版本的时候上传的Jar包越来越大,耗费的时间越来越久,所以本文找了一种解决办法 </font>
 
 
 #### 解决思路如下
->在考虑有没有办法把不会修改的jar包(非公司内部jar包)当作外部依赖,每次只打包公司内部开发的jar包,找到以下解决办法
+>&emsp;&emsp;在考虑有没有办法把不会修改的jar包(非公司内部jar包)当作外部依赖,每次只打包公司内部开发的jar包,找到以下解决办法
 
 
 1. **在SpringBoot项目中找到pom.xml文件,修改文件**
