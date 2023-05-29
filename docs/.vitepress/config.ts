@@ -15,8 +15,8 @@ export default defineConfig({
     lineNumbers: true,
   },
   head: [
-    ['link', { rel: 'shortcut icon',type: 'image/x-icon', href: '/vitepress/favicon.ico' }],
-    ['link', { rel: 'icon', type: 'image/x-icon', href: '/vitepress/favicon.ico' }],
+    ['link', { rel: 'shortcut icon',type: 'image/x-icon', href: '/blog/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/blog/favicon.ico' }],
   ],
   themeConfig: {
     logo: '/hero.svg',
