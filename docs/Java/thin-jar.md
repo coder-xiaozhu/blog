@@ -1,6 +1,6 @@
 
 #### 前言
-><font color=LightCoral>所周知,SpringBoot打Jar包的时候会把所有依赖的Jar包都打包在BOOT-INF/lib目录下,随着业务越来越复杂,引用的Jar包也就越来越多,导致每次更新版本的时候上传的Jar包越来越大,耗费的时间越来越久,所以本文找了一种解决办法 </font>
+><font color=LightCoral>众所周知,SpringBoot打Jar包的时候会把所有依赖的Jar包都打包在BOOT-INF/lib目录下,随着业务越来越复杂,引用的Jar包也就越来越多,导致每次更新版本的时候上传的Jar包越来越大,耗费的时间越来越久,所以本文找了一种解决办法 </font>
 
 
 #### 解决思路如下
