@@ -36,14 +36,14 @@ features:
   - title: MySQL
     icon:
       src: /mysql.svg
-    details: Redis相关博客
-    link: /Redis/
+    details: MySQL相关博客
+    link: /MySQL/
     linkText: 点击查看
   - title: MessageQueue
     icon:
       src: /mq.svg
-    details: Redis相关博客
-    link: /Redis/
+    details: MQ相关博客
+    link: /MQ/
     linkText: 点击查看
   - title: 友情链接
     link: https://blog.ltools.vip/

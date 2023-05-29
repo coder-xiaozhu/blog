@@ -1,9 +1,10 @@
+# SpringBoot-Jar包瘦身
 
-#### 前言
+## 前言
 ><font color=LightCoral>&emsp;&emsp;众所周知,SpringBoot打Jar包的时候会把所有依赖的Jar包都打包在BOOT-INF/lib目录下,随着业务越来越复杂,引用的Jar包也就越来越多,导致每次更新版本的时候上传的Jar包越来越大,耗费的时间越来越久,所以本文找了一种解决办法 </font>
 
 
-#### 解决思路如下
+## 解决思路如下
 >&emsp;&emsp;在考虑有没有办法把不会修改的jar包(非公司内部jar包)当作外部依赖,每次只打包公司内部开发的jar包,找到以下解决办法
 
 
@@ -66,7 +67,7 @@ mvn clean package -Dmaven.test.skip=true
 java -jar demo-0.0.1-SNAPSHOT.jar
 ```  
 
-#### LAYOUT 的可选值如下
+## LAYOUT 的可选值如下
 >1. **`JAR`: 可执行jar**
 >2. **`WAR`: 可执行war， provided依赖放在`WEB-INF/lib-provided`目录中，以防止war部署在servlet容器会崩溃**
 >3. **`ZIP(alias to DIR)`: 和JAR布局相似，不同的是可以使用外部配置，而不是JAR布局中的默认配置。**
