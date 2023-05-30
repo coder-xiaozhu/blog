@@ -125,6 +125,7 @@ function sundrySidebar() {
       items: [
         { text: 'Linux常用命令', link: '/Sundry/linux-command' },
         { text: 'Docker常用命令', link: '/Sundry/docker-command' },
+        { text: 'Git常用命令', link: '/Sundry/git-command' },
         { text: 'Docker安装Redis', link: '/Sundry/docker-install-redis' },
         { text: 'CentOS-8配置阿里云yum源', link: '/Sundry/centos-yum' },
         { text: 'Nginx安装错误: No package nginx available 问题', link: '/Sundry/centos-install-nginx' },

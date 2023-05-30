@@ -1,5 +1,21 @@
 # Docker常用指令
 
+## Docker 搜索镜像
+`docker search <image-name>`
+
+## Docker 拉取镜像
+`docker pull <image-name>`
+
+## Docker 查看已经下载的镜像列表
+`docker images`
+
+## Docker 查看本地的容器列表
+- `docker ps`    查看正在运行的容器列表
+- `docker ps -a`  查看所有(正在运行和未在运行)的容器列表
+
+## Docker 中查看容器日志
+`docker logs <container-id>`
+
 ## Docker 宿主机和容器文件互相拷贝
 
 ### 把Docker容器中的文件拷贝到宿主机
