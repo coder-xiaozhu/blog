@@ -6,7 +6,8 @@ export default defineConfig({
   description: "小朱的博客",
   lastUpdated: true,
   useWebFonts: false,
-  base: '/blog',
+  // base: '/blog',
+  base: '',
   outDir: 'build/.vuepress/dist',
   locales: {
     root: { label: '简体中文', lang: 'zh-CN' },
