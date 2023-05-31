@@ -88,7 +88,7 @@ function goSidebar() {
     {
       text: 'Go',
       items: [
-        { text: 'Go实现枚举', link: '/Go/enum' },
+        { text: 'Go实现枚举', link: '/go/enum' },
       ]
     }
   ]
