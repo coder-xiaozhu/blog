@@ -35,12 +35,21 @@ export default defineConfig({
       copyright: `L-Pig | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="https://github.com/coder-xiaozhu">coder-xiaozhu</a>`,
     },
     nav: [
-      { text: 'Java', link: '/Java/' },
-      { text: 'Go', link: '/Go/' },
-      { text: 'Redis', link: '/Redis/' },
-      { text: 'MySQL', link: '/MySQL/' },
-      { text: 'MQ', link: '/MQ/' },
-      { text: '杂项', link: '/Sundry/' }
+      { text: '后端' ,items: [
+        { text: 'Java', link: '/java/' },
+        { text: 'Go', link: '/go/' },
+        { text: 'Redis', link: '/redis/' },
+        { text: 'MySQL', link: '/mysql/' },
+        { text: 'MQ', link: '/mq/' },
+      ]},
+      // { text: '前端',items: [
+      //   { text: 'Vue', link: '/vue/' },
+      //   { text: 'JavaScript', link: '/js/' },
+      //   { text: 'CSS', link: '/css/' },
+      //   { text: 'HTML', link: '/html/' },  
+      //   { text: 'TypeScript', link: '/ts/'}
+      // ]},
+      { text: '杂项', link: '/sundry/' }
     ],
     sidebar: getSidebar(),
     socialLinks: [
@@ -51,12 +60,12 @@ export default defineConfig({
 
 function getSidebar() {
   return {
-    "/Java/": javaSidebar(),
-    "/Go/": goSidebar(),
-    "/Redis/": redisSidebar(),
-    "/MySQL": mysqlSidebar(),
-    "/MQ": mqSidebar(),
-    "/Sundry/": sundrySidebar()
+    "/java/": javaSidebar(),
+    "/go/": goSidebar(),
+    "/redis/": redisSidebar(),
+    "/mysql/": mysqlSidebar(),
+    "/mq/": mqSidebar(),
+    "/sundry/": sundrySidebar()
   }
 }
 
@@ -65,10 +74,10 @@ function javaSidebar() {
     {
       text: 'Java',
       items: [
-        { text: 'SpringBoot打包后不能读取classpath下文件', link: '/Java/springboot-package' },
-        { text: 'SpringBoot-Jar包瘦身', link: '/Java/thin-jar' },
-        { text: '浅谈@SpringBootApplication', link: 'Java/@SpringBootApplication' },
-        { text: 'Feign', link: '/Java/feign-global-config' },
+        { text: 'SpringBoot打包后不能读取classpath下文件', link: '/java/springboot-package' },
+        { text: 'SpringBoot-Jar包瘦身', link: '/java/thin-jar' },
+        { text: '浅谈@SpringBootApplication', link: 'java/@SpringBootApplication' },
+        { text: 'Feign', link: '/java/feign-global-config' },
       ]
     }
   ]
@@ -79,7 +88,7 @@ function goSidebar() {
     {
       text: 'Go',
       items: [
-        { text: 'Go实现枚举', link: '/Go/enum' },
+        { text: 'Go实现枚举', link: '/go/enum' },
       ]
     }
   ]
@@ -90,7 +99,7 @@ function redisSidebar() {
     {
       text: 'Redis',
       items: [
-        { text: '缓存穿透、缓存击穿、缓存雪崩', link: '/Redis/cache' }
+        { text: '缓存穿透、缓存击穿、缓存雪崩', link: '/redis/cache' }
       ]
     }
   ]
@@ -101,8 +110,8 @@ function mysqlSidebar() {
     {
       text: 'MySQL',
       items: [
-        { text: 'MySQL事务', link: '/MySQL/mysql-transaction' },
-        { text: 'MySQL索引失效', link: '/MySQL/index-lose-efficacy' }
+        { text: 'MySQL事务', link: '/mysql/mysql-transaction' },
+        { text: 'MySQL索引失效', link: '/mysql/index-lose-efficacy' }
       ]
     }
   ]
@@ -113,7 +122,7 @@ function mqSidebar() {
     {
       text: 'MQ',
       items: [
-        { text: 'Kafka安装', link: '/MQ/kafka-install' }
+        { text: 'Kafka安装', link: '/mq/kafka-install' }
       ]
     }
   ]
@@ -124,13 +133,13 @@ function sundrySidebar() {
     {
       text: '杂项',
       items: [
-        { text: 'Linux常用命令', link: '/Sundry/linux-command' },
-        { text: 'Docker常用命令', link: '/Sundry/docker-command' },
-        { text: 'Git常用命令', link: '/Sundry/git-command' },
-        { text: 'Docker安装Redis', link: '/Sundry/docker-install-redis' },
-        { text: 'CentOS-8配置阿里云yum源', link: '/Sundry/centos-yum' },
-        { text: 'Nginx安装错误: No package nginx available 问题', link: '/Sundry/centos-install-nginx' },
-        { text: 'Nginx Permission denied 问题', link: '/Sundry/nginx-permission-denied' }
+        { text: 'Linux常用命令', link: '/sundry/linux-command' },
+        { text: 'Docker常用命令', link: '/sundry/docker-command' },
+        { text: 'Git常用命令', link: '/sundry/git-command' },
+        { text: 'Docker安装Redis', link: '/sundry/docker-install-redis' },
+        { text: 'CentOS-8配置阿里云yum源', link: '/sundry/centos-yum' },
+        { text: 'Nginx安装错误: No package nginx available 问题', link: '/sundry/centos-install-nginx' },
+        { text: 'Nginx Permission denied 问题', link: '/sundry/nginx-permission-denied' }
       ]
     }
   ]
