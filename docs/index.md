@@ -19,11 +19,11 @@ features:
     icon: 
       src: /java.svg
     details: Java相关博客
-    link: /Java/
+    link: /java/
     linkText: 点击查看
   - title: Go
     details: Go相关博客
-    link: /Go/
+    link: /go/
     icon:
       src: /golang.svg
     linkText: 点击查看
@@ -31,19 +31,19 @@ features:
     icon:
       src: /redis.svg
     details: Redis相关博客
-    link: /Redis/
+    link: /redis/
     linkText: 点击查看
   - title: MySQL
     icon:
       src: /mysql.svg
     details: MySQL相关博客
-    link: /MySQL/
+    link: /mysql/
     linkText: 点击查看
   - title: MessageQueue
     icon:
       src: /mq.svg
     details: MQ相关博客
-    link: /MQ/
+    link: /mq/
     linkText: 点击查看
   - title: 友情链接
     link: https://blog.ltools.vip/
