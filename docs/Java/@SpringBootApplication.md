@@ -2,7 +2,7 @@
 
 ## **@SpringBootApplication**
 
-> **`@SpringBootApplication`** 作为SpringBoot的核心注解，他的作用就是扫描特定包下的Bean并注入到Ioc容器中，同时开启自动配置(AutoConfiguration)，它是由**`@SpringBootConfiguration`**、**`@EnableAutoConfiguration`**和** `@ComponentScan`**三大注解组合而成（java元注解除外）。
+> **`@SpringBootApplication`** 作为SpringBoot的核心注解，他的作用就是扫描特定包下的Bean并注入到Ioc容器中，同时开启自动配置(AutoConfiguration)，它是由 **`@SpringBootConfiguration`**、**`@EnableAutoConfiguration`** 和 **`@ComponentScan`** 三大注解组合而成（java元注解除外）。
 
 ```java
 @SpringBootConfiguration
@@ -172,7 +172,7 @@ public @interface EnableAutoConfiguration {
 }
 ```
 
-> 同时，除了元注解之外，它还被**`@AutoConfigurationPackage`** 和 **`@Import`** 注解修饰，其中 **`@Import`** 注解引入了 **`AutoConfigurationImportSelector`**类。
+> 同时，除了元注解之外，它还被 **`@AutoConfigurationPackage`** 和 **`@Import`** 注解修饰，其中 **`@Import`** 注解引入了 **`AutoConfigurationImportSelector`** 类。
 
 ## **@AutoConfigurationPackage**
 
@@ -196,7 +196,7 @@ public @interface AutoConfigurationPackage {
 }
 ```
 
-> 引入了**`AutoConfigurationPackages.Registrar.class`**，是** `AutoConfigurationPackages`**的静态内部类，实现了两个接口的方法(**`ImportBeanDefinitionRegistrar`**和** `DeterminableImports`**,其中** `ImportBeanDefinitionRegistrar`**用作存储来自导入配置的基本包)。
+> 引入了 **`AutoConfigurationPackages.Registrar.class`**，是 **`AutoConfigurationPackages`** 的静态内部类，实现了两个接口的方法( **`ImportBeanDefinitionRegistrar`** 和 **`DeterminableImports`**,其中 **`ImportBeanDefinitionRegistrar`** 用作存储来自导入配置的基本包)。
 
 ```java
 /**
@@ -217,7 +217,7 @@ static class Registrar implements ImportBeanDefinitionRegistrar, DeterminableImp
 }
 ```
 
-> 在**`registerBeanDefinitions`**方法中，它在获取到元数据之后，使用** `getPackageNames`**方法获取到包名，并用** `toArray`**方法转化为数组来进行注册，这就是SpringBoot回默认扫描** `main`**方法所在的包以及其子目录的原因。
+> 在 **`registerBeanDefinitions`** 方法中，它在获取到元数据之后，使用 **`getPackageNames`** 方法获取到包名，并用 **`toArray`** 方法转化为数组来进行注册，这就是SpringBoot回默认扫描 **`main`** 方法所在的包以及其子目录的原因。
 
 ## **AutoConfigurationImportSelector.class**
 
@@ -244,7 +244,7 @@ protected AutoConfigurationEntry getAutoConfigurationEntry(AnnotationMetadata an
 }
 ```
 
-> 先判断，如果未开启自动配置(EnableAutoConfiguration.ENABLED_OVERRIDE_PROPERTY配置，且默认未true)，则直接返回。
+> 先判断，如果未开启自动配置( **`EnableAutoConfiguration.ENABLED_OVERRIDE_PROPERTY`** 配置，且默认未true)，则直接返回。
 > 首先获得了注解属性，接着获得了一个List型的configurations，紧接着对这个configurations做各种操作：
 
 ```java
@@ -267,7 +267,7 @@ protected List<String> getCandidateConfigurations(AnnotationMetadata metadata, A
 }
 ```
 
-> 查看**`SpringFactoriesLoader.loadFactoryNames()`**方法:
+> 查看 **`SpringFactoriesLoader.loadFactoryNames()`** 方法:
 
 ```java
 public static List<String> loadFactoryNames(Class<?> factoryType, @Nullable ClassLoader classLoader) {
@@ -280,9 +280,9 @@ public static List<String> loadFactoryNames(Class<?> factoryType, @Nullable Clas
 }
 ```
 
-> 首先获得类加载器，若为空，则获取**`SpringFactoriesLoader`**的类加载器。
-> 最后通过** `loadSpringFactories(classLoaderToUse).getOrDefault(factoryTypeName, Collections.emptyList())`**;获取返回的** `configurations`**。
-> 查看** `loadFactoryNames`**方法源码
+> 首先获得类加载器，若为空，则获取 **`SpringFactoriesLoader`** 的类加载器。
+> 最后通过 **`loadSpringFactories(classLoaderToUse).getOrDefault(factoryTypeName, Collections.emptyList())`**;获取返回的 **`configurations`**。
+> 查看 **`loadFactoryNames`** 方法源码
 
 ```java
 private static Map<String, List<String>> loadSpringFactories(ClassLoader classLoader) {
@@ -512,7 +512,7 @@ org.springframework.boot.autoconfigure.session.JdbcIndexedSessionRepositoryDepen
 
 ```
 
-> 以**`RedisAutoConfiguration`**文件为例:
+> 以 **`RedisAutoConfiguration`** 文件为例:
 
 ```java
 @Configuration(proxyBeanMethods = false)
@@ -542,5 +542,6 @@ public class RedisAutoConfiguration {
 }
 ```
 
-> 它引入了**`RedisProperties.class`** ,这个类中就是**`SpringBoot`**集成** `Redis`**的配置信息类，其中携带者一些默认值，如** `host`**的默认值是** `localhost`**等。同时，这个自动配置类只有在引入了** `RedisOperations.class`**才会被装载到Ioc容器中。而** `RedisOperations.class`**是在** `Spring-Data-Redis`**包中，当引入** `spring-boot-starter-data-redis`**时会同时依赖这个jar包。
-> 所以，**`SpringBoot`**就是如此实现了自动配置。
+> 它引入了 **`RedisProperties.class`** ,这个类中就是 **`SpringBoot`** 集成 **`Redis`** 的配置信息类，其中携带者一些默认值，如 **`host`**、**`localhost`** 等。同时，这个自动配置类只有在引入了 **`RedisOperations.class`** 才会被装载到Ioc容器中。而 
+**`RedisOperations.class`** 是在 **`Spring-Data-Redis`** 包中，当引入 **`spring-boot-starter-data-redis`** 时会同时依赖这个jar包。
+> 所以，    **`SpringBoot`** 就是如此实现了自动配置。
