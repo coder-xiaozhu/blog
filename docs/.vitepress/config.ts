@@ -5,7 +5,7 @@ export default defineConfig({
   title: "L-Pig's Blog",
   description: "小朱的博客",
   lastUpdated: true,
-  useWebFonts: false,
+  // useWebFonts: false,
   // base: '/blog',
   base: '',
   outDir: 'build/.vuepress/dist',
