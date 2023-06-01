@@ -9,10 +9,12 @@
 ## 配置
 `git config --global user.name <user-name>`  配置用户名  
 `git config --global user.email <user-email>`  配置邮箱  
-`git remote set-url origin <repository-address>`  修改仓库地址  
+`git config --global core.ignorecase false`  开启区分大小写  
 `git config --global --unset http.proxy`  取消代理  
+`git remote set-url origin <repository-address>`  修改仓库地址  
 `git config user.name`  查看用户名  
 `git config user.email`  查看邮箱  
+
 
 ## 编辑Git配置文件
 `git config --global -e`  编辑全局配置文件  
