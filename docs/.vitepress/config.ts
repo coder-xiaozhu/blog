@@ -134,6 +134,7 @@ function sundrySidebar() {
       text: '杂项',
       items: [
         { text: 'Linux常用命令', link: '/sundry/linux-command' },
+        { text: 'zsh和oh-my-zsh安装', link: '/sundry/install-zsh'},
         { text: 'Docker常用命令', link: '/sundry/docker-command' },
         { text: 'Git常用命令', link: '/sundry/git-command' },
         { text: 'Docker安装Redis', link: '/sundry/docker-install-redis' },
