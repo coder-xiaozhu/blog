@@ -5,6 +5,9 @@
     "docs:preview": "vitepress preview docs --port 8080"
   },
   "dependencies": {
+    "@mdit/plugin-tasklist": "^0.4.6",
+    "markdown-it": "^12.0.4",
+    "markdown-it-anchor": "^8.6.7",
     "vitepress": "^1.0.0-beta.1"
   }
 }

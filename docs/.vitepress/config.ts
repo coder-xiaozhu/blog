@@ -1,4 +1,6 @@
 import { defineConfig } from 'vitepress'
+import anchor from 'markdown-it-anchor'
+import { tasklist } from '@mdit/plugin-tasklist'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -14,6 +16,10 @@ export default defineConfig({
   },
   markdown: {
     lineNumbers: true,
+    config: (md) => {
+      md.use(anchor)
+      md.use(tasklist, {})
+    }
   },
   head: [
     ['link', { rel: 'shortcut icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -35,13 +41,15 @@ export default defineConfig({
       copyright: `L-Pig | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="https://github.com/coder-xiaozhu">coder-xiaozhu</a>`,
     },
     nav: [
-      { text: '后端' ,items: [
-        { text: 'Java', link: '/java/' },
-        { text: 'Go', link: '/go/' },
-        { text: 'Redis', link: '/redis/' },
-        { text: 'MySQL', link: '/mysql/' },
-        { text: 'MQ', link: '/mq/' },
-      ]},
+      {
+        text: '后端', items: [
+          { text: 'Java', link: '/java/', activeMatch: '/java/' },
+          { text: 'Go', link: '/go/', activeMatch: '/go/' },
+          { text: 'Redis', link: '/redis/', activeMatch: '/redis/' },
+          { text: 'MySQL', link: '/mysql/', activeMatch: '/mysql/' },
+          { text: 'MQ', link: '/mq/', activeMatch: '/mq/' }
+        ]
+      },
       // { text: '前端',items: [
       //   { text: 'Vue', link: '/vue/' },
       //   { text: 'JavaScript', link: '/js/' },
@@ -49,7 +57,7 @@ export default defineConfig({
       //   { text: 'HTML', link: '/html/' },  
       //   { text: 'TypeScript', link: '/ts/'}
       // ]},
-      { text: '杂项', link: '/sundry/' }
+      { text: '杂项', link: '/sundry/', activeMatch: '/sundry/' }
     ],
     sidebar: getSidebar(),
     socialLinks: [
@@ -134,7 +142,7 @@ function sundrySidebar() {
       text: '杂项',
       items: [
         { text: 'Linux常用命令', link: '/sundry/linux-command' },
-        { text: 'zsh和oh-my-zsh安装', link: '/sundry/install-zsh'},
+        { text: 'zsh和oh-my-zsh安装', link: '/sundry/install-zsh' },
         { text: 'Docker常用命令', link: '/sundry/docker-command' },
         { text: 'Git常用命令', link: '/sundry/git-command' },
         { text: 'Docker安装Redis', link: '/sundry/docker-install-redis' },
