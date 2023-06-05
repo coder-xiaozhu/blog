@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import anchor from 'markdown-it-anchor'
-import { tasklist } from '@mdit/plugin-tasklist'
+import  tasklist from 'markdown-it-task-lists'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -18,7 +18,7 @@ export default defineConfig({
     lineNumbers: true,
     config: (md) => {
       md.use(anchor)
-      md.use(tasklist, {})
+      md.use(tasklist, {enabled : false, label: true, labelAfter: true})
     }
   },
   head: [
