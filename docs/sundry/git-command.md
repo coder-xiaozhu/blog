@@ -48,6 +48,7 @@
 ## 创建分支
 `git branch <branch-name>`  只创建分支   
 `git checkout -b <branch-name>` 创建并切换分支   
+`git checkout <commit-id> -b <branch-name>` 从指定commit签出代码创建新分支
 `git baranch --set-upstream-to=origin/<branch-name> <branch-name>`  设置本地分支与远程分支的链接  
 
 ## 删除分支
