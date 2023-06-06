@@ -12,6 +12,7 @@
 `git config --global core.ignorecase false`  开启区分大小写  
 `git config --global --unset http.proxy`  取消代理  
 `git remote set-url origin <repository-address>`  修改仓库地址  
+`git remote -v`  查看远程仓库地址  
 `git config user.name`  查看用户名  
 `git config user.email`  查看邮箱  
 
