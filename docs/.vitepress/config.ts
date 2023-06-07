@@ -38,7 +38,7 @@ export default defineConfig({
       next: '下一篇',
     },
     footer: {
-      copyright: `L-Pig | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="https://github.com/coder-xiaozhu">coder-xiaozhu</a>`,
+      copyright: `L-Pig | 版权所有 © 2022-${new Date().getFullYear()} <a target="_blank" href="https://github.com/L-Pig">L-Pig</a>`,
     },
     nav: [
       {
