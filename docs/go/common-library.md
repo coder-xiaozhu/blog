@@ -30,29 +30,29 @@
     4. [iris](https://github.com/kataras/iris)
     5. [beego](https://github.com/beego/beego)
     6. [go-micro](https://github.com/go-micro/go-micro)
-    7. [go-zero]
-    8. [kratos]
-    9. [go-kit]
-    10. [goa]
-    11. [buffalo]
-    12. [revel]
-    13. [gizmo]
-    14. [go-restful]
-    15. [go-json-rest]
-    16. [go-jsonrpc]
-    17. [go-socket.io]
+    7. [go-zero](https://go-zero.dev/)
+    8. [kratos](https://go-kratos.dev/)
+    9. [go-kit](https://gokit.io/)
+    10. [goa](https://github.com/goadesign/goa)
+    11. [buffalo](https://gobuffalo.io/)
+    12. [revel](https://revel.github.io/)
+    13. [gizmo](https://open.nytimes.com/introducing-gizmo-aa7ea463b208)
+    14. [go-restful](https://github.com/emicklei/go-restful)
+    15. [go-json-rest](https://ant0ine.github.io/go-json-rest/)
+    16. [go-jsonrpc](https://github.com/filecoin-project/go-jsonrpc)
+    17. [go-socket.io](https://github.com/googollee/go-socket.io)
+    18. [go-resty](https://github.com/go-resty/resty)
 
 7. 任务调度
-    1. [cron]
-    2. [go-cron]
-    3. [go-quartz]
-    4. [go-worker]
+    1. [cron](https://github.com/robfig/cron)
+    2. [go-cron](https://github.com/odise/go-cron)
+    3. [go-quartz](https://github.com/reugn/go-quartz)
+    4. [go-worker](https://github.com/purposeinplay/go-worker)
 
 8. 验证库
-    1. [validator]
-    2. [go-playground]
+    1. [validator](https://github.com/Azure/go-autorest)
+    2. [go-playground](https://github.com/go-playground/validator)
 
 9. 代码生成
-    1. [goctl]
-    2. [go-zero]
-    3. [kratos]
+    2. [go-zero](https://go-zero.dev/)
+    3. [kratos](https://github.com/go-kratos/kratos)
