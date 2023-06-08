@@ -97,6 +97,7 @@ function goSidebar() {
       text: 'Go',
       items: [
         { text: 'Go实现枚举', link: '/go/enum' },
+        { text: 'Go常用库', link: '/go/common-library' },
       ]
     }
   ]
