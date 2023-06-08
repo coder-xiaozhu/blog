@@ -4,10 +4,14 @@
 1. [logrus](https://github.com/sirupsen/logrus)
 2. [zap](https://github.com/uber-go/zap)
 3. [zerolog](https://github.com/rs/zerolog)
+4. [slog](https:/
 
 ## 配置库
 1. [viper](https://github.com/spf13/viper)
 2. [envconfig](https://github.com/kelseyhightower/envconfig)
+
+## 切片，map，数组lambda
+1. [lo](https://github.com/samber/lo)
 
 ## 数据库
 1. [gorm](https://gorm.io)
