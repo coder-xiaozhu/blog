@@ -107,6 +107,29 @@
 `git reset --mixed HEAD^`  回滚到上一次提交，并保留修改到暂存区  
 `git reset --mixed HEAD^^`  回滚到上上次提交，并保留修改到暂存区  
 `git reset --mixed HEAD~n`  回滚到上n次提交，并保留修改到暂存区  
+`git reset --keep <commit-id>`  回滚到指定提交，并保留修改到暂存区和工作区  
+`git reset --keep HEAD^`  回滚到上一次提交，并保留修改到暂存区和工作区  
+`git reset --keep HEAD^^`  回滚到上上次提交，并保留修改到暂存区和工作区  
+`git reset --keep HEAD~n`  回滚到上n次提交，并保留修改到暂存区和工作区  
+`git reset --merge <commit-id>`  回滚到指定提交，并保留修改到暂存区和工作区，但不提交  
+`git reset --merge HEAD^`  回滚到上一次提交，并保留修改到暂存区和工作区，但不提交  
+`git reset --merge HEAD^^`  回滚到上上次提交，并保留修改到暂存区和工作区，但不提交  
+`git reset --merge HEAD~n`  回滚到上n次提交，并保留修改到暂存区和工作区，但不提交  
+`git reset --hard ORIG_HEAD`  回滚到上一次提交，但不保留修改  
+`git reset --hard ORIG_HEAD^`  回滚到上上次提交，但不保留修改  
+`git reset --hard ORIG_HEAD^^`  回滚到上上上次提交，但不保留修改  
+`git reset --hard ORIG_HEAD~n`  回滚到上n次提交，但不保留修改  
+`git revert <commit-id>`  回滚到指定提交，并创建新的提交  
+`git revert HEAD^`  回滚到上一次提交，并创建新的提交  
+`git revert HEAD^^`  回滚到上上次提交，并创建新的提交  
+`git revert HEAD~n`  回滚到上n次提交，并创建新的提交  
+`git revert --no-commit <commit-id>`  回滚到指定提交，并创建新的提交，但不提交  
+`git revert --no-commit HEAD^`  回滚到上一次提交，并创建新的提交，但不提交  
+`git revert --no-commit HEAD^^`  回滚到上上次提交，并创建新的提交，但不提交  
+`git revert --no-commit HEAD~n`  回滚到上n次提交，并创建新的提交，但不提交  
+`git revert --abort`  取消回滚  
+`git revert --continue`  继续回滚  
+
 
 ## 比较差异
 `git diff`  比较工作区和暂存区的差异  
