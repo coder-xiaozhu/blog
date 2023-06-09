@@ -50,6 +50,7 @@ export default defineConfig({
           { text: 'MQ', link: '/mq/', activeMatch: '/mq/' }
         ]
       },
+      { text: '数据结构', link: '/data-structure/', activeMatch: '/data-structure/' },
       // { text: '前端',items: [
       //   { text: 'Vue', link: '/vue/' },
       //   { text: 'JavaScript', link: '/js/' },
@@ -73,7 +74,8 @@ function getSidebar() {
     "/redis/": redisSidebar(),
     "/mysql/": mysqlSidebar(),
     "/mq/": mqSidebar(),
-    "/sundry/": sundrySidebar()
+    "/sundry/": sundrySidebar(),
+    "/data-structure/": dataStructureSidebar()
   }
 }
 
@@ -150,6 +152,17 @@ function sundrySidebar() {
         { text: 'CentOS-8配置阿里云yum源', link: '/sundry/centos-yum' },
         { text: 'Nginx安装错误: No package nginx available 问题', link: '/sundry/centos-install-nginx' },
         { text: 'Nginx Permission denied 问题', link: '/sundry/nginx-permission-denied' }
+      ]
+    }
+  ]
+}
+
+function dataStructureSidebar(){
+  return [
+    {
+      text: '数据结构',
+      items: [
+        { text: '稀疏数组', link: '/data-structure/sparse_array' },
       ]
     }
   ]
