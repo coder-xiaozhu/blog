@@ -15,17 +15,17 @@ hero:
   #     link: /Java/
 
 features:
-  - title: Java
-    icon: 
-      src: /java.svg
-    details: Java相关博客
-    link: /java/
-    linkText: 点击查看
   - title: Go
     details: Go相关博客
     link: /go/
     icon:
       src: /golang.svg
+    linkText: 点击查看
+  - title: Java
+    icon: 
+      src: /java.svg
+    details: Java相关博客
+    link: /java/
     linkText: 点击查看
   - title: Redis
     icon:

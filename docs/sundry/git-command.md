@@ -84,6 +84,7 @@
 `git push`  推送本地仓库到远程仓库  
 `git push -f`  推送本地仓库到远程仓库(强制)  
 `git push origin <branch-name>`  推送本地仓库到远程仓库
+`git push -u origin <branch-name>`  推送本地仓库到远程仓库，并设置本地分支与远程分支的链接
 
 ## 查看提交日志
 `git log`  查看提交日志  
