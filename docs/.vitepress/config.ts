@@ -163,6 +163,7 @@ function dataStructureSidebar(){
       text: '数据结构',
       items: [
         { text: '稀疏数组', link: '/data-structure/sparse_array' },
+        { text: '队列', link: '/data-structure/queue' },
       ]
     }
   ]
