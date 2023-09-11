@@ -4,7 +4,7 @@
 1. [logrus](https://github.com/sirupsen/logrus)
 2. [zap](https://github.com/uber-go/zap)
 3. [zerolog](https://github.com/rs/zerolog)
-4. [slog](https:/
+4. [slog](https://pkg.go.dev/golang.org/x/exp/slog)
 
 ## 配置库
 1. [viper](https://github.com/spf13/viper)
