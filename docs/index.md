@@ -49,6 +49,6 @@ features:
     link: https://blog.ltools.vip/
     details: 不谈能力，只谈纸上理论的都在耍流氓
     icon:
-      src: https://img.ltools.vip/thumbnails/5e27508df661220b9ff1305ebee45af3.png
+      src: https://blog.ltools.vip/imgs/logo.png
     linkText: 点击进入
 ---
