@@ -50,7 +50,7 @@ export default defineConfig({
           { text: 'MQ', link: '/mq/', activeMatch: '/mq/' }
         ]
       },
-      { text: '数据结构', link: '/data-structure/', activeMatch: '/data-structure/' },
+      // { text: '数据结构', link: '/data-structure/', activeMatch: '/data-structure/' },
       // { text: '前端',items: [
       //   { text: 'Vue', link: '/vue/' },
       //   { text: 'JavaScript', link: '/js/' },
@@ -62,7 +62,7 @@ export default defineConfig({
     ],
     sidebar: getSidebar(),
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/coder-xiaozhu' }
+      { icon: 'github', link: 'https://github.com/L-Pig' }
     ],
   }
 })
