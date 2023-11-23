@@ -99,6 +99,7 @@ function goSidebar() {
       text: 'Go',
       items: [
         { text: 'Go实现枚举', link: '/go/enum' },
+        { text: 'Go实现前缀表达式', link: '/go/prefix_expr' },
         { text: 'Go常用库', link: '/go/common-library' },
         { text: 'Go面试题', link: '/go/interview-questions' },
       ]
