@@ -100,6 +100,7 @@ function goSidebar() {
       items: [
         { text: 'Go实现枚举', link: '/go/enum' },
         { text: 'Go常用库', link: '/go/common-library' },
+        { text: 'Go面试题', link: '/go/interview-questions' },
       ]
     }
   ]
@@ -107,6 +108,9 @@ function goSidebar() {
 
 function redisSidebar() {
   return [
+    {
+      items: [{ text: '介绍', link: '/redis/' }],
+    },
     {
       text: 'Redis',
       items: [
